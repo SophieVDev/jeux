@@ -1,0 +1,60 @@
+body{
+    max-width: 500px;
+    margin: auto;
+}
+
+.bandeau{
+   width: 100%;
+   max-height: 267; 
+}
+
+#beginGame{
+    background-color: bisque;
+    padding: 15px;
+    border-radius: 5px;
+}
+.reboursDiv{
+    transition: 0.2s;
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+    border-radius: 35px;
+    padding: 15px;
+    font-weight: bold;
+    }
+
+.reboursDiv.cool{
+    background-color: green;
+font-size: 15px;
+}
+
+.reboursDiv.warning{
+    background-color: orange;
+    }
+
+.reboursDiv.danger{
+    background-color: red;
+        animation: suspens 1s infinite;
+        }
+
+#gamePropalDiv {
+    display: none;
+}
+
+/*pour créer une animation*/
+@keyframes suspens {
+   /*à 0 et 100% de l'application il y aura cette aimation*/ 
+    0%, 100%{
+        transform: rotate(0deg);
+        font-size: 20px;
+    }
+    33%{
+        transform: rotate(-30deg);
+        font-size: 23px;
+    }
+    66%{
+        transform: rotate(30deg);
+        font-size: 23px;
+    }
+    
+}
